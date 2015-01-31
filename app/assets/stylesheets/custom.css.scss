@@ -41,3 +41,32 @@ body {
     padding-right: 5px;
   }
 }
+
+/* Custom css alert for devise */
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #4caf50;
+}
+
+.alert-notice hr {
+  border-top-color: #c9e2b3;
+}
+
+.alert-notice .alert-link {
+  color: #3d8b40;
+}
+
+.alert-alert {
+  background-color: #ffe0b2;
+  border-color: #ffc599;
+  color: #ff9800;
+}
+
+.alert-alert hr {
+  border-top-color: #ffb67f;
+}
+
+.alert-alert .alert-link {
+  color: #cc7a00;
+}

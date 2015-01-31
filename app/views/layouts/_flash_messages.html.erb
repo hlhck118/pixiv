@@ -1,0 +1,11 @@
+<% if flash.any? %>
+    <div class="container">
+      <% flash.each do |type, msg| %>
+          <%= content_tag(:div, class: "alert alert-dismissable alert-#{type}") do %>
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <h4><%= type.capitalize %>!</h4>
+              <p><%= msg %></p>
+          <% end %>
+      <% end %>
+    </div>
+<% end %>
