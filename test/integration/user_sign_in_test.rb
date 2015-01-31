@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class UserSignInTest < ActionDispatch::IntegrationTest
+  def setup
+    @user = FactoryGirl.create(:user)
+  end
 
   test "sign in with blank information" do
     visit new_user_session_url

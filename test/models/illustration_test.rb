@@ -1,8 +1,10 @@
 require 'test_helper'
+include ActionDispatch::TestProcess
 
 class IllustrationTest < ActiveSupport::TestCase
   def setup
-    @illustration = FactoryGirl.build(:illustration)
+    @user = FactoryGirl.create(:user)
+    @illustration = FactoryGirl.create(:illustration, :user => @user)
   end
 
   test "illustration should be valid" do
@@ -15,8 +17,9 @@ class IllustrationTest < ActiveSupport::TestCase
   end
 
   test "illustration image should only accept image" do
-    illustration_doc =FactoryGirl.build(:illustration_doc)
-    assert_not illustration_doc.valid?
+    @illustration.image = fixture_file_upload('test_doc.docx',
+                                              'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    assert_not @illustration.valid?
   end
 
   test "title should be present" do

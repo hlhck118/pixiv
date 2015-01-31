@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b093a343-a1d4-407f-b495-65d64a591046" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/illustrations.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/illustration.rb" afterPath="$PROJECT_DIR$/app/models/illustration.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/illustration_test.rb" afterPath="$PROJECT_DIR$/test/models/illustration_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/factories/illustrations.rb" afterPath="$PROJECT_DIR$/test/factories/illustrations.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/illustrations_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/illustrations_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pixiv.iml" afterPath="$PROJECT_DIR$/.idea/pixiv.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__pixiv.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__pixiv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/user_sign_in_test.rb" afterPath="$PROJECT_DIR$/test/integration/user_sign_in_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/factories/users.rb" afterPath="$PROJECT_DIR$/test/factories/users.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pixiv.iws" />
@@ -26,18 +25,24 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pixiv@db_create__pixiv.coverage" NAME="db:create: pixiv Coverage Results" MODIFIED="1422685775565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
     <SUITE FILE_PATH="coverage/pixiv@test_illustration_should_be_valid__pixiv.coverage" NAME="test_illustration_should_be_valid: pixiv Coverage Results" MODIFIED="1422709716287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@test_sign_in_with_wrong_username_and_password__pixiv.coverage" NAME="test_sign_in_with_wrong_username_and_password: pixiv Coverage Results" MODIFIED="1422673936767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_render_sign_in_page_when_not_sign_in__pixiv.coverage" NAME="test_render_sign_in_page_when_not_sign_in: pixiv Coverage Results" MODIFIED="1422715333568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
     <SUITE FILE_PATH="coverage/pixiv@db_seed__pixiv.coverage" NAME="db:seed: pixiv Coverage Results" MODIFIED="1422685851606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@test_illustration_image_should_be_present__pixiv.coverage" NAME="test_illustration_image_should_be_present: pixiv Coverage Results" MODIFIED="1422709792166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@Run_test__UserSignInTest___pixiv.coverage" NAME="Run test 'UserSignInTest': pixiv Coverage Results" MODIFIED="1422711234922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@Run_test__IllustrationTest___pixiv.coverage" NAME="Run test 'IllustrationTest': pixiv Coverage Results" MODIFIED="1422712712179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@test_sign_in_with_blank_information__pixiv.coverage" NAME="test_sign_in_with_blank_information: pixiv Coverage Results" MODIFIED="1422673867051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@test_illustration_image_should_only_accept_image__pixiv.coverage" NAME="test_illustration_image_should_only_accept_image: pixiv Coverage Results" MODIFIED="1422710754509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@db_migrate__pixiv.coverage" NAME="db:migrate: pixiv Coverage Results" MODIFIED="1422685785181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
-    <SUITE FILE_PATH="coverage/pixiv@Run_test__UserSignUpTest___pixiv.coverage" NAME="Run test 'UserSignUpTest': pixiv Coverage Results" MODIFIED="1422674188263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@Run_test__UserSignInTest___pixiv.coverage" NAME="Run test 'UserSignInTest': pixiv Coverage Results" MODIFIED="1422713956106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@Run_test__UserUploadIllustrationTest___pixiv.coverage" NAME="Run test 'UserUploadIllustrationTest': pixiv Coverage Results" MODIFIED="1422715724485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_illustration_image_should_only_accept_image__pixiv.coverage" NAME="test_illustration_image_should_only_accept_image: pixiv Coverage Results" MODIFIED="1422714930781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_upload_with_valid_image__pixiv.coverage" NAME="test_upload_with_valid_image: pixiv Coverage Results" MODIFIED="1422715707524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@Run_test__UserSignUpTest___pixiv.coverage" NAME="Run test 'UserSignUpTest': pixiv Coverage Results" MODIFIED="1422713969668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
     <SUITE FILE_PATH="coverage/pixiv@db_drop__pixiv.coverage" NAME="db:drop: pixiv Coverage Results" MODIFIED="1422685764082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@db_create__pixiv.coverage" NAME="db:create: pixiv Coverage Results" MODIFIED="1422685775565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_sign_in_with_wrong_username_and_password__pixiv.coverage" NAME="test_sign_in_with_wrong_username_and_password: pixiv Coverage Results" MODIFIED="1422673936767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_illustration_image_should_be_present__pixiv.coverage" NAME="test_illustration_image_should_be_present: pixiv Coverage Results" MODIFIED="1422709792166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@Run_test__IllustrationTest___pixiv.coverage" NAME="Run test 'IllustrationTest': pixiv Coverage Results" MODIFIED="1422714628429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test__pixiv.coverage" NAME="test: pixiv Coverage Results" MODIFIED="1422715991832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_sign_in_with_blank_information__pixiv.coverage" NAME="test_sign_in_with_blank_information: pixiv Coverage Results" MODIFIED="1422673867051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_all__pixiv.coverage" NAME="test:all: pixiv Coverage Results" MODIFIED="1422715946211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@db_migrate__pixiv.coverage" NAME="db:migrate: pixiv Coverage Results" MODIFIED="1422685785181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
+    <SUITE FILE_PATH="coverage/pixiv@test_upload_with_invalid_file_type__not_image__pixiv.coverage" NAME="test_upload_with_invalid_file_type,_not_image: pixiv Coverage Results" MODIFIED="1422715656308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pixiv" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -135,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_flash_messages.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootswatch.paper.css" />
-        <option value="$PROJECT_DIR$/test/test_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/test/integration/user_sign_up_test.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
@@ -154,13 +158,17 @@
         <option value="$PROJECT_DIR$/app/controllers/illustrations_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/illustration.rb" />
-        <option value="$PROJECT_DIR$/test/factories/users.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
-        <option value="$PROJECT_DIR$/test/factories/illustrations.rb" />
         <option value="dbtable:/af142d8b/9d9aae7b-bef6-472c-99d9-310816bc1903/pixiv_test.public.users" />
-        <option value="$PROJECT_DIR$/test/models/illustration_test.rb" />
-        <option value="$PROJECT_DIR$/test/integration/user_sign_in_test.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/illustrations.yml" />
+        <option value="$PROJECT_DIR$/test/integration/user_sign_in_test.rb" />
+        <option value="$PROJECT_DIR$/test/factories/users.rb" />
+        <option value="$PROJECT_DIR$/test/factories/illustrations.rb" />
+        <option value="$PROJECT_DIR$/test/models/illustration_test.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/test/integration/user_upload_illustration_test.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/home_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/illustrations_controller_test.rb" />
       </list>
     </option>
   </component>
@@ -264,6 +272,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pixiv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pixiv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,8 +331,8 @@
       <recent name="$PROJECT_DIR$/vendor/assets/stylesheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'IllustrationTest': pixiv">
-    <configuration default="false" name="test_illustration_should_be_valid: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+  <component name="RunManager" selected="Rake.test: pixiv">
+    <configuration default="false" name="test_render_sign_in_page_when_not_sign_in: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="pixiv" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -327,9 +353,9 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/illustration_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_upload_illustration_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_illustration_should_be_valid" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_render_sign_in_page_when_not_sign_in" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -339,7 +365,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_illustration_image_should_be_present: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_upload_with_invalid_file_type,_not_image: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="pixiv" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -360,9 +386,9 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/illustration_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_upload_illustration_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_illustration_image_should_be_present" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_upload_with_invalid_file_type,_not_image" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -372,7 +398,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_illustration_image_should_only_accept_image: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_upload_with_valid_image: pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="pixiv" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -393,9 +419,9 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/illustration_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_upload_illustration_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_illustration_image_should_only_accept_image" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_upload_with_valid_image" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -405,7 +431,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Run test 'IllustrationTest': pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="Run test 'UserUploadIllustrationTest': pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="pixiv" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -426,7 +452,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/illustration_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_upload_illustration_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
@@ -438,19 +464,15 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Run test 'UserSignInTest': pixiv" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+    <configuration default="false" name="test:all: pixiv" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="pixiv" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
@@ -458,15 +480,12 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_sign_in_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test:all" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -624,19 +643,19 @@
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: pixiv" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: pixiv" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: pixiv" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_should_be_valid: pixiv" />
-      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_image_should_be_present: pixiv" />
-      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_image_should_only_accept_image: pixiv" />
-      <item index="7" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'IllustrationTest': pixiv" />
-      <item index="8" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'UserSignInTest': pixiv" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_render_sign_in_page_when_not_sign_in: pixiv" />
+      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_upload_with_invalid_file_type,_not_image: pixiv" />
+      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_upload_with_valid_image: pixiv" />
+      <item index="7" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'UserUploadIllustrationTest': pixiv" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.test:all: pixiv" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'IllustrationTest': pixiv" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'UserSignInTest': pixiv" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_image_should_only_accept_image: pixiv" />
-        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_image_should_be_present: pixiv" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_illustration_should_be_valid: pixiv" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.test:all: pixiv" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'UserUploadIllustrationTest': pixiv" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_upload_with_valid_image: pixiv" />
+        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_upload_with_invalid_file_type,_not_image: pixiv" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_render_sign_in_page_when_not_sign_in: pixiv" />
       </list>
     </recent_temporary>
   </component>
@@ -659,7 +678,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1727672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1724924" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -717,23 +736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02556391" vertical-offset="0" max-vertical-offset="665">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.097841725" vertical-offset="0" max-vertical-offset="695">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
@@ -856,13 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.214286" vertical-offset="302" max-vertical-offset="731">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/user_sign_up_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.111597374" vertical-offset="0" max-vertical-offset="457">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1030,6 +1025,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/illustration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66520786" vertical-offset="70" max-vertical-offset="765">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/user_sign_up_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.111597374" vertical-offset="0" max-vertical-offset="457">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="457">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/af142d8b/9d9aae7b-bef6-472c-99d9-310816bc1903/pixiv_test.public.users">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
@@ -1043,25 +1062,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/factories/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22319475" vertical-offset="0" max-vertical-offset="457">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2603939" vertical-offset="0" max-vertical-offset="527">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5136691" vertical-offset="0" max-vertical-offset="695">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/user_sign_in_test.rb">
+    <entry file="file://$PROJECT_DIR$/test/factories/illustrations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.111597374" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.2603939" vertical-offset="0" max-vertical-offset="457">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/illustrations_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.111597374" vertical-offset="0" max-vertical-offset="457">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/home_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.111597374" vertical-offset="0" max-vertical-offset="457">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
@@ -1069,24 +1096,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/models/illustration_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22319475" vertical-offset="0" max-vertical-offset="646">
+        <state vertical-scroll-proportion="0.70678335" vertical-offset="0" max-vertical-offset="697">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/user_sign_in_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.111597374" vertical-offset="51" max-vertical-offset="612">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/factories/illustrations.rb">
+    <entry file="file://$PROJECT_DIR$/test/integration/user_upload_illustration_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.22319475" vertical-offset="0" max-vertical-offset="612">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/illustration.rb">
+    <entry file="file://$PROJECT_DIR$/test/factories/users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66520786" vertical-offset="70" max-vertical-offset="765">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.37199125" vertical-offset="0" max-vertical-offset="457">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>

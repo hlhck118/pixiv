@@ -16,6 +16,11 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   include Capybara::DSL
+  include FactoryGirl
+
+  include Warden::Test::Helpers
+  Warden.test_mode!
+
   ActiveRecord::Migration.check_pending!
 
   def teardown
