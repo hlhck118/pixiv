@@ -20,7 +20,7 @@ class Illustration < ActiveRecord::Base
                        :content_type => {:content_type => /\Aimage\/.*\Z/},
                        :size => {:less_than => 10.megabytes}
 
-  validates :title, presence: true, length: {maximum: 254}
+  validates :title, presence: true, length: {maximum: 50}
 
   def rename_image_file
     extension = File.extname(image_file_name).downcase

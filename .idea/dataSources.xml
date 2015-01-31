@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4001974341">
+  <component name="DataSourceManagerImpl" format="xml" hash="2737989746">
     <data-source source="LOCAL" name="Rails pixiv: development" uuid="39ee49e8-11ee-4cec-bdc1-09ffb9970386">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
