@@ -28,13 +28,13 @@
             </div>
 
             <div class="form-group">
-              <%= f.submit "Sign up", class: "btn btn-primary form-control" %>
+              <%= f.submit "Sign Up", class: "btn btn-primary form-control" %>
             </div>
         <% end %>
       </div>
       <div class="panel-footer">
           <%- if controller_name != 'sessions' %>
-              <%= link_to "Log in", new_session_path(resource_name), class: "pull-left" %><br/>
+              <%= link_to "Have account? Sign In", new_session_path(resource_name), class: "pull-left" %><br/>
           <% end -%>
           <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
               <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name), class: "pull-left" %><br/>
