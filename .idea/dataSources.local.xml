@@ -8,9 +8,10 @@
       <default-schemas>pixiv_development.pg_catalog pixiv_development.public</default-schemas>
     </data-source>
     <data-source name="Rails pixiv: test" uuid="9d9aae7b-bef6-472c-99d9-310816bc1903">
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
       <user-password>dfc7dfcbdfd9dfc2dfc3dfd8dfc5</user-password>
+      <schema-pattern>pixiv_test.pg_catalog pixiv_test.public</schema-pattern>
+      <default-schemas>pixiv_test.pg_catalog pixiv_test.public</default-schemas>
     </data-source>
     <data-source name="Rails pixiv: production" uuid="38aacc5f-f251-43c1-90c0-7e70571d3f20">
       <first-sync>true</first-sync>
