@@ -20,8 +20,16 @@
         <li><a href="#"><i class="fa fa-star"></i> Bookmark</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-user"></i> Sign Up</a></li>
-        <li><a href="#"><i class="fa fa-sign-in"></i> Sign In</a></li>
+        <li>
+          <%= link_to new_user_registration_path do %>
+              <i class="fa fa-user"></i> Sign Up
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_user_session_path do %>
+              <i class="fa fa-sign-in"></i> Sign In
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>
