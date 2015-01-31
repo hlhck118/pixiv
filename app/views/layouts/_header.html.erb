@@ -17,7 +17,11 @@
           <% end %>
               </li>
 
-        <li><a href="#"><i class="fa fa-upload"></i> Submit</a></li>
+        <li>
+          <%= link_to new_illustration_path do %>
+              <i class="fa fa-upload"></i> Upload
+          <% end %>
+        </li>
         <li><a href="#"><i class="fa fa-star"></i> Bookmark</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

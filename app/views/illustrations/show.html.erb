@@ -1,0 +1,53 @@
+<%= provide(:title, @illustration.title) %>
+<div class="row">
+  <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag(@illustration.image.url(:thumb_sm), class: "img-responsive") %>
+      </div>
+      <div class="panel-footer">
+        <div class="profile-wrapper">
+          <h6 class="text-center">
+            <a href="#">User NickName</a>
+          </h6>
+
+          <p class="text-center"><a href="#" class="btn btn-sm btn-default">Follow</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="illustration-info">
+              <p>
+                <%= @illustration.created_at.strftime("%m/%d/%Y") %> |
+                <%= @illustration.image_width %> x <%= @illustration.image_height %> |
+                <%= number_to_human_size(@illustration.image_file_size) %>
+              </p>
+              <h5><%= @illustration.title %></h5>
+            </div>
+            <div class="illustration-static pull-right">
+              <p>
+                Views: 1000 &nbps;&nbps;&nbps;
+                Rating: 2000 &nbps;&nbps;&nbps;
+                Total: 1230123 &nbps;&nbps;&nbps;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="thumbnail">
+          <%= image_tag(@illustration.image.url(:big), class: "img-responsive") %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+</div>
