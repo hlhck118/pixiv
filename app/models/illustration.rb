@@ -1,10 +1,13 @@
 class Illustration < ActiveRecord::Base
+
+  belongs_to :user
+
   before_create :rename_image_file
   before_save :extract_resolutions
 
   has_attached_file :image,
                     :styles => {
-                        :big => "1280x1280>",
+                        :big => "1280x720>",
                         :medium => "600x600>",
                         :thumb_md => "150x150>",
                         :thumb_sm => "100x100>"

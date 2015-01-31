@@ -8,8 +8,11 @@
       <div class="panel-footer">
         <div class="profile-wrapper">
           <h6 class="text-center">
-            <a href="#">User NickName</a>
+            <%= link_to user_illustrations_path(@illustration.user) do %>
+                <%= @illustration.user.email %>
+            <% end %>
           </h6>
+
           <p class="text-center"><a href="#" class="btn btn-sm btn-default">Follow</a></p>
         </div>
       </div>
@@ -36,6 +39,12 @@
                 Rating: 2000&nbsp;&nbsp;
                 Total: 1230123&nbsp;&nbsp;
               </p>
+              <%= link_to "Download", download_illustration_path(@illustration, :original), class: "btn btn-default btn-sm pull-right" %>
+              <%= link_to "Delete", illustration_path(@illustration),
+                          method: :delete,
+                          class: "btn btn-default btn-sm pull-right",
+                          data: {confirm: "Are you sure?"} %>
+              <%= link_to "Edit", edit_illustration_path(@illustration), class: "btn btn-default btn-sm pull-right" %>
             </div>
           </div>
         </div>

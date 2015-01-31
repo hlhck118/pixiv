@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :illustrations
+  resources :illustrations, except: [:index]
+  get 'users/:id/illustrations' => 'illustrations#index', as: 'user_illustrations'
+  get 'illustration/:id/download/:style' => 'illustrations#download', as: 'download_illustration'
 end
