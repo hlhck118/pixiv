@@ -2,6 +2,7 @@ require 'test_helper'
 
 class UserDeleteIllustrationTest < ActionDispatch::IntegrationTest
   def setup
+    Warden.test_reset!
     @illustration = FactoryGirl.create(:illustration)
     login_as(@illustration.user, :scope => :user)
     visit illustration_path(@illustration)

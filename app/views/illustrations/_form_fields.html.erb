@@ -23,8 +23,10 @@
 
   <div class="checkbox-inline">
     <% @data[:restrictions].each do |restriction| %>
-        <%= f.radio_button :restriction, restriction.id, checked: @data[:illustration].restriction.id == restriction.id %>
-        <%= f.label :restriction, restriction.name, value: restriction.id %>
+        <%= f.radio_button :restriction_id, restriction.id,
+                           checked: @data[:illustration].restriction.nil? ? false :
+                                   @data[:illustration].restriction.id == restriction.id %>
+        <%= f.label :restriction_id, restriction.name, value: restriction.id %>
     <% end %>
   </div>
 </div>
@@ -33,8 +35,10 @@
 
   <div class="checkbox-inline">
     <% @data[:privacy_levels].each do |privacy_level| %>
-        <%= f.radio_button :privacy_level, privacy_level.id, checked: @data[:illustration].privacy_level.id == privacy_level.id %>
-        <%= f.label :privacy_level, privacy_level.name, value: privacy_level.id %>
+        <%= f.radio_button :privacy_level_id, privacy_level.id,
+                           checked: @data[:illustration].privacy_level.nil? ? false :
+                                   @data[:illustration].privacy_level.id == privacy_level.id %>
+        <%= f.label :privacy_level_id, privacy_level.name, value: privacy_level.id %>
     <% end %>
   </div>
 </div>

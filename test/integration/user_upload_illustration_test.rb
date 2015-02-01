@@ -2,6 +2,7 @@ require 'test_helper'
 
 class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   def setup
+    Warden.test_reset!
     @restriction = FactoryGirl.create(:restriction)
     @privacy_level = FactoryGirl.create(:privacy_level)
     @user = FactoryGirl.create(:user)
@@ -25,7 +26,7 @@ class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   test "upload with valid image and not choose restriction" do
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_privacy_level_#{@privacy_level.id}"
+    choose "illustration_privacy_level_id_#{@privacy_level.id}"
     click_button "Upload"
     has_content? "Restriction can't be blank"
   end
@@ -33,7 +34,7 @@ class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   test "upload with valid image and not choose privacy_level" do
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_restriction_#{@restriction.id}"
+    choose "illustration_restriction_id_#{@restriction.id}"
     click_button "Upload"
     has_content? "Privacy level can't be blank"
   end
@@ -41,8 +42,8 @@ class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   test "upload with valid image" do
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_privacy_level_#{@privacy_level.id}"
-    choose "illustration_restriction_#{@restriction.id}"
+    choose "illustration_privacy_level_id_#{@privacy_level.id}"
+    choose "illustration_restriction_id_#{@restriction.id}"
     click_button "Upload"
     has_content? "Illustration Uploaded!"
   end
