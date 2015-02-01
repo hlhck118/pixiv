@@ -1,0 +1,40 @@
+<div class="col-md-9">
+  <div class="form-group">
+    <%= f.file_field :image, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_area :description, class: "form-control", placeholder: "Description", rows: 8 %>
+  </div>
+  <div class="form-group">
+    <% if params[:action] == "new" || params[:action] == "create" %>
+        <%= f.submit "Upload", class: "btn btn-primary" %>
+    <% elsif params[:action] == "edit" || params[:action] == "update" %>
+        <%= f.submit "Update", class: "btn btn-primary" %>
+        <%= link_to "Done", illustration_path(illustration), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-3">
+
+  <h6 class="text-center">Browsing restriction</h6>
+
+  <div class="checkbox-inline">
+    <% @data[:restrictions].each do |restriction| %>
+        <%= f.radio_button :restriction, restriction.id, checked: @data[:illustration].restriction.id == restriction.id %>
+        <%= f.label :restriction, restriction.name, value: restriction.id %>
+    <% end %>
+  </div>
+</div>
+<div class="form-group">
+  <h6 class="text-center">Privacy Level</h6>
+
+  <div class="checkbox-inline">
+    <% @data[:privacy_levels].each do |privacy_level| %>
+        <%= f.radio_button :privacy_level, privacy_level.id, checked: @data[:illustration].privacy_level.id == privacy_level.id %>
+        <%= f.label :privacy_level, privacy_level.name, value: privacy_level.id %>
+    <% end %>
+  </div>
+</div>

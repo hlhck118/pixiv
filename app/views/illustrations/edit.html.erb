@@ -4,28 +4,17 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="text-center">Edit Illustration</h2>
+
         <div class="thumbnail">
-          <%= image_tag(@illustration.image.url(:medium), class: "img-responsive") %>
+          <%= image_tag(@data[:illustration].image.url(:medium), class: "img-responsive") %>
         </div>
       </div>
       <div class="panel-body">
-        <%= form_for @illustration do |f| %>
-            <div class="form-gr">
+        <%= form_for @data[:illustration] do |f| %>
+            <div class="form-group">
               <%= render 'shared/error_messages', object: f.object %>
             </div>
-            <div class="form-group">
-              <%= f.file_field :image, class: "form-control" %>
-            </div>
-            <div class="form-group">
-              <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
-            </div>
-            <div class="form-group">
-              <%= f.text_area :description, class: "form-control", placeholder: "Description", rows: 8  %>
-            </div>
-            <div class="form-group">
-              <%= f.submit "Upload", class: "btn btn-primary" %>
-              <%= link_to "Done", illustration_path(@illustration), class: "btn btn-primary" %>
-            </div>
+            <%= render 'illustrations/form_fields', f: f, illustration: @data[:illustration] %>
         <% end %>
       </div>
     </div>
