@@ -22,9 +22,8 @@ class ActiveSupport::TestCase
   Warden.test_mode!
 
   ActiveRecord::Migration.check_pending!
-
-  Capybara.default_driver = :selenium
   def teardown
     Capybara.reset_sessions!
+    Capybara.use_default_driver
   end
 end

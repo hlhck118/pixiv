@@ -2,17 +2,20 @@ require 'test_helper'
 
 class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   def setup
+    @restriction = FactoryGirl.create(:restriction)
+    @privacy_level = FactoryGirl.create(:privacy_level)
     @user = FactoryGirl.create(:user)
+
+    login_as(@user, :scope => :user)
+    visit new_illustration_path
   end
 
   test "render sign in page when not sign in" do
-    visit new_illustration_path
+    logout(:user)
     has_content? "You need to sign in or sign up before continuing."
   end
 
   test "upload with invalid file type, not image" do
-    login_as(@user, :scope => :user)
-    visit new_illustration_path
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_doc.docx")
     fill_in "illustration_title", with: "Test Upload"
     click_button "Upload"
@@ -20,32 +23,26 @@ class UserUploadIllustrationTest < ActionDispatch::IntegrationTest
   end
 
   test "upload with valid image and not choose restriction" do
-    login_as(@user, :scope => :user)
-    visit new_illustration_path
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_privacy_level_1", visible: false
+    choose "illustration_privacy_level_#{@privacy_level.id}"
     click_button "Upload"
     has_content? "Restriction can't be blank"
   end
 
   test "upload with valid image and not choose privacy_level" do
-    login_as(@user, :scope => :user)
-    visit new_illustration_path
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_restriction_1"
+    choose "illustration_restriction_#{@restriction.id}"
     click_button "Upload"
     has_content? "Privacy level can't be blank"
   end
 
   test "upload with valid image" do
-    login_as(@user, :scope => :user)
-    visit new_illustration_path
     attach_file "illustration_image", File.join(Rails.root, "test", "fixtures", "test_img.jpg")
     fill_in "illustration_title", with: "Test Upload"
-    choose "illustration_privacy_level_1"
-    choose "illustration_restriction_1"
+    choose "illustration_privacy_level_#{@privacy_level.id}"
+    choose "illustration_restriction_#{@restriction.id}"
     click_button "Upload"
     has_content? "Illustration Uploaded!"
   end

@@ -8,8 +8,6 @@ class IllustrationsController < ApplicationController
 
   def new
     @illustration = Illustration.new
-    @restrictions = Restriction.all
-    @privacy_level = PrivacyLevel.all
   end
 
   def create
@@ -62,11 +60,6 @@ class IllustrationsController < ApplicationController
     )
   end
 
-  private
-  def illustration_params
-    params.require(:illustration).permit(:image, :title, :description)
-  end
-
   def load_restriction
     @restrictions = Restriction.all
   end
@@ -74,4 +67,11 @@ class IllustrationsController < ApplicationController
   def load_privacy_level
     @privacy_level = PrivacyLevel.all
   end
+
+  private
+  def illustration_params
+    params.require(:illustration).permit(:image, :title, :description)
+  end
+
+
 end

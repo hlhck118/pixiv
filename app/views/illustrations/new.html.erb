@@ -31,7 +31,7 @@
               <div class="checkbox-inline">
                 <% @restrictions.each do |restriction| %>
                     <%= f.radio_button :restriction, restriction.id %>
-                    <%= f.label :restriction, restriction.name, id: restriction.name %>
+                    <%= f.label :restriction, restriction.name, value: restriction.id %>
                 <% end %>
               </div>
             </div>
@@ -41,7 +41,7 @@
               <div class="checkbox-inline">
                 <% @privacy_level.each do |privacy_level| %>
                     <%= f.radio_button :privacy_level, privacy_level.id %>
-                    <%= f.label :privacy_level, privacy_level.name, id: privacy_level.name %>
+                    <%= f.label :privacy_level, privacy_level.name, value: privacy_level.id %>
                 <% end %>
               </div>
         <% end %>
