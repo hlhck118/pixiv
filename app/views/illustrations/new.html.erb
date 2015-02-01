@@ -6,7 +6,7 @@
         <h2 class="text-center">Upload Illustration</h2>
       </div>
       <div class="panel-body">
-        <%= form_for @illustration do |f| %>
+        <%= form_for @data[:illustration] do |f| %>
             <div class="form-group">
               <%= render 'shared/error_messages', object: f.object %>
             </div>
@@ -29,7 +29,7 @@
               <h6 class="text-center">Browsing restriction</h6>
 
               <div class="checkbox-inline">
-                <% @restrictions.each do |restriction| %>
+                <% @data[:restrictions].each do |restriction| %>
                     <%= f.radio_button :restriction, restriction.id %>
                     <%= f.label :restriction, restriction.name, value: restriction.id %>
                 <% end %>
@@ -39,7 +39,7 @@
               <h6 class="text-center">Privacy Level</h6>
 
               <div class="checkbox-inline">
-                <% @privacy_level.each do |privacy_level| %>
+                <% @data[:privacy_levels].each do |privacy_level| %>
                     <%= f.radio_button :privacy_level, privacy_level.id %>
                     <%= f.label :privacy_level, privacy_level.name, value: privacy_level.id %>
                 <% end %>
