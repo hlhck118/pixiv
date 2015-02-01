@@ -7,22 +7,45 @@
       </div>
       <div class="panel-body">
         <%= form_for @illustration do |f| %>
-            <div class="form-gr">
+            <div class="form-group">
               <%= render 'shared/error_messages', object: f.object %>
             </div>
-            <div class="form-group">
+            <div class="col-md-9">
+              <div class="form-group">
                 <%= f.file_field :image, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+              </div>
+              <div class="form-group">
+                <%= f.text_area :description, class: "form-control", placeholder: "Description", rows: 8 %>
+              </div>
+              <div class="form-group">
+                <%= f.submit "Upload", class: "btn btn-primary" %>
+              </div>
+            </div>
+            <div class="col-md-3">
+
+              <h6 class="text-center">Browsing restriction</h6>
+
+              <div class="checkbox-inline">
+                <% @restrictions.each do |restriction| %>
+                    <%= f.radio_button :restriction, restriction.id %>
+                    <%= f.label :restriction, restriction.name, id: restriction.name %>
+                <% end %>
+              </div>
             </div>
             <div class="form-group">
-              <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
-            </div>
-            <div class="form-group">
-              <%= f.text_area :description, class: "form-control", placeholder: "Description", rows: 8  %>
-            </div>
-            <div class="form-group">
-              <%= f.submit "Upload", class: "btn btn-primary" %>
-            </div>
+              <h6 class="text-center">Privacy Level</h6>
+
+              <div class="checkbox-inline">
+                <% @privacy_level.each do |privacy_level| %>
+                    <%= f.radio_button :privacy_level, privacy_level.id %>
+                    <%= f.label :privacy_level, privacy_level.name, id: privacy_level.name %>
+                <% end %>
+              </div>
         <% end %>
+        </div>
       </div>
     </div>
   </div>

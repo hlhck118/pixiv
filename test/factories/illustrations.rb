@@ -6,5 +6,7 @@ FactoryGirl.define do
     title "test img"
     description "aaaaaaaaaaaaaa"
     association :user
+    association :restriction
+    association :privacy_level
   end
 end

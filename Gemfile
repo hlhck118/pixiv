@@ -50,6 +50,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'minitest-reporters'
 end
 

@@ -1,11 +1,15 @@
 class IllustrationsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :load_restriction, only: [:new, :edit]
+  before_action :load_privacy_level, only: [:new, :edit]
 
   def index
   end
 
   def new
     @illustration = Illustration.new
+    @restrictions = Restriction.all
+    @privacy_level = PrivacyLevel.all
   end
 
   def create
@@ -15,6 +19,8 @@ class IllustrationsController < ApplicationController
       flash[:success] = "Illustration Uploaded!"
       redirect_to illustration_url(@illustration)
     else
+      load_restriction
+      load_privacy_level
       render 'new'
     end
   end
@@ -33,6 +39,8 @@ class IllustrationsController < ApplicationController
       flash[:success] = "Illustration Updated!"
       redirect_to edit_illustration_path(@illustration)
     else
+      load_restriction
+      load_privacy_level
       render 'edit'
     end
   end
@@ -57,5 +65,13 @@ class IllustrationsController < ApplicationController
   private
   def illustration_params
     params.require(:illustration).permit(:image, :title, :description)
+  end
+
+  def load_restriction
+    @restrictions = Restriction.all
+  end
+
+  def load_privacy_level
+    @privacy_level = PrivacyLevel.all
   end
 end

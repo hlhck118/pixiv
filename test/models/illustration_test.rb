@@ -32,4 +32,14 @@ class IllustrationTest < ActiveSupport::TestCase
     assert_not @illustration.valid?
   end
 
+  test "illustration restriction should be present" do
+    @illustration.restriction = nil
+    assert_not @illustration.valid?
+  end
+
+  test "illustration privacy level should be present" do
+    @illustration.privacy_level = nil
+    assert_not @illustration.valid?
+  end
+
 end

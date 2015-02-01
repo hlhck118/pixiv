@@ -1,6 +1,8 @@
 class Illustration < ActiveRecord::Base
 
   belongs_to :user
+  belongs_to :privacy_level
+  belongs_to :restriction
 
   before_create :rename_image_file
   before_save :extract_resolutions
@@ -21,6 +23,10 @@ class Illustration < ActiveRecord::Base
                        :size => {:less_than => 10.megabytes}
 
   validates :title, presence: true, length: {maximum: 50}
+  validates :restriction, presence: true
+  validates :privacy_level, presence: true
+
+  # extra methods
 
   def rename_image_file
     extension = File.extname(image_file_name).downcase
