@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-
+  # routes config for devise
+  devise_for :users, skip: :registrations
+  devise_scope :user do
+    resource :registration,
+             only: [:new, :create, :edit, :update],
+             path: 'users',
+             path_names: { new: 'sign_up' },
+             controller: 'registrations',
+             as: :user_registration do
+      get :cancel
+    end
+  end
+  # routes config for app
   root 'home#index'
 
   resources :illustrations, except: [:index]
