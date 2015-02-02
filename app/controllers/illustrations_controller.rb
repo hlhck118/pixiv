@@ -5,6 +5,7 @@ class IllustrationsController < ApplicationController
   before_action :load_privacy_levels, only: [:new, :edit]
 
   def index
+    @illustrations = Illustration.where(user: current_user).order(:created_at => :desc).page(params[:page]).per(12)
   end
 
   def new

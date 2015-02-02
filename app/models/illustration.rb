@@ -9,8 +9,9 @@ class Illustration < ActiveRecord::Base
 
   has_attached_file :image,
                     :styles => {
-                        :big => "1280x720>",
+                        :large => "1280x720>",
                         :medium => "600x600>",
+                        :thumb_lg => "300x300>",
                         :thumb_md => "150x150>",
                         :thumb_sm => "100x100>"
                     },

@@ -1,2 +1,31 @@
-<h1>Illustrations#index</h1>
-<p>Find me in app/views/illustrations/index.html.erb</p>
+<%= provide(:title, "#{current_user.email} works") %>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default ">
+      <div class="panel-body">
+        <div class="row gallery">
+          <% @illustrations.each do |illustration| %>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="img-wrapper">
+                  <div class="thumbnail">
+                    <%= link_to illustration_path(illustration) do %>
+                        <%= image_tag(illustration.image.url(:thumb_lg), class: "img-responsive img-gallery") %>
+                    <% end %>
+                  </div>
+                  <div class="caption">
+                    <p class="text-center"><%= illustration.title %></p>
+                  </div>
+                </div>
+              </div>
+              <div class="clear"></div>
+          <% end %>
+        </div>
+        <div class="row">
+          <div class="paginate-wrapper">
+            <%= paginate @illustrations %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

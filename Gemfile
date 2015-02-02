@@ -32,6 +32,9 @@ gem 'devise'
 # Upload Image
 gem 'paperclip'
 
+#pagination
+gem 'kaminari'
+
 # disable assets log in rails server
 gem 'quiet_assets', group: :development
 

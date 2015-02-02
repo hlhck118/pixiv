@@ -17,9 +17,11 @@
   </div>
   <% if Rails.env.development? %>
       <div class="container">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <%= debug(params) %>
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <%= debug(params) %>
+            </div>
           </div>
         </div>
       </div>
