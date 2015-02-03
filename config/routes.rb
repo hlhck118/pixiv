@@ -12,6 +12,9 @@ Rails.application.routes.draw do
       get :cancel
     end
   end
+  # routes for extend user
+  get 'users/profile' => 'profile#show', as: 'user_profile'
+
   # routes config for app
   root 'home#index'
 

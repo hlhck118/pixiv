@@ -20,7 +20,7 @@ class Illustration < ActiveRecord::Base
 
   validates_attachment :image,
                        :presence => true,
-                       :content_type => {:content_type => /\Aimage\/.*\Z/},
+                       :content_type => {:content_type => /\Aimage\/(png|jpeg)\Z/},
                        :size => {:less_than => 10.megabytes}
 
   validates :title, presence: true, length: {maximum: 50}
