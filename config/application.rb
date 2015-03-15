@@ -26,6 +26,6 @@ module Pixiv
       g.assets = false
       g.helper = false
     end
-    config.assets.paths << Rails.root.join('vendor', 'assets')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
   end
 end
