@@ -1,0 +1,37 @@
+.col.s12.m9.l9
+  = render 'shared/error_messages', object: f.object
+  .file-field.input-field
+    input.file-path.validate[type="text"]
+    .btn.blue.darken-2
+      span
+        | File
+      = f.file_field :image
+  .input-field
+    = f.label :title
+    = f.text_field :title
+  .input-field
+    = f.label :description
+    = f.text_area :description, class: "materialize-textarea", rows: 20
+  .input-field
+    - if params[:action] == "new" || params[:action] == "create"
+      = f.submit "Upload", class: "btn blue darken-2"
+    - elsif params[:action] == "edit" || params[:action] == "update"
+      = f.submit "Update", class: "btn blue darken-2"
+      = link_to "Done", illustration_path(illustration), class: "btn btn-primary"
+
+.col.s12.m3.l3
+  h6.center-align.blue-text
+    | Browsing restriction
+  - @data[:restrictions].each do |restriction|
+    = f.radio_button :restriction_id, restriction.id,
+      checked: @data[:illustration].restriction.nil? ? false : @data[:illustration].restriction.id == restriction.id,
+      class: "with-gap"
+    = f.label :restriction_id, restriction.name, value: restriction.id
+
+  h6.center-align.blue-text
+    | Privacy Level
+  - @data[:privacy_levels].each do |privacy_level|
+    = f.radio_button :privacy_level_id, privacy_level.id,
+      checked: @data[:illustration].privacy_level.nil? ? false : @data[:illustration].privacy_level.id == privacy_level.id,
+      class: "with-gap"
+    = f.label :privacy_level_id, privacy_level.name, value: privacy_level.id

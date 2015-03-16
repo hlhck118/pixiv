@@ -1,0 +1,10 @@
+= provide(:title, "Upload Illustration")
+.row
+  .col.m12
+    .card
+      .card-content
+        .card-title
+          h2.center-align.blue-text
+            | Upload Illustration
+        = form_for @data[:illustration] do |f|
+          = render 'illustrations/form_fields', f: f
