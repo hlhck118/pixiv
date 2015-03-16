@@ -1,14 +1,14 @@
 header
   nav.blue.darken-2
-    .navbar-wrapper.container
+    .nav-wrapper.container
       = link_to 'Pixiv', root_path, class: 'brand-logo'
       a.button-collapse href="#" data-activates="mobile-nav"
         i.mdi-navigation-menu
       ul.right.hide-on-med-and-down
         li
           = link_to "Home", root_path
-        li
-          = link_to "Upload", new_illustration_path
+          li
+            = link_to "Upload", new_illustration_path
         - if user_signed_in?
           li
             = link_to "My works", user_illustrations_path(current_user)
