@@ -21,7 +21,7 @@
 
 .col.s12.m3.l3
   h6.center-align.blue-text
-    | Browsing restriction
+    | Browsing Restriction
   - @data[:restrictions].each do |restriction|
     = f.radio_button :restriction_id, restriction.id,
       checked: @data[:illustration].restriction.nil? ? false : @data[:illustration].restriction.id == restriction.id,

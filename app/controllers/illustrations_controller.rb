@@ -59,10 +59,10 @@ class IllustrationsController < ApplicationController
     illustration = Illustration.find(params[:id])
     style = params[:style].nil? ? :original : params[:style].to_sym
     send_file(
-        illustration.image.path(style),
-        file_name: illustration.image_file_name,
-        type: illustration.image_content_type,
-        disposition: "attachment"
+      illustration.image.path(style),
+      file_name: illustration.image_file_name,
+      type: illustration.image_content_type,
+      disposition: "attachment"
     )
   end
 

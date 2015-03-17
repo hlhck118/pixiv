@@ -8,3 +8,12 @@
             | Upload Illustration
         = form_for @data[:illustration] do |f|
           = render 'illustrations/form_fields', f: f
+
+javascript:
+  $(document).ready(function() {
+    $("input:file").change(function() {
+      var filename = $(this).val();
+      filename = baseName(filename);
+      $('.file-path').val(filename);
+    })
+  });
